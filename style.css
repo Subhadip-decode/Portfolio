@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e3f2fd; /* Light blue background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1976d2; /* Dark blue header */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.resume-button,
+.contact-button,
+.back-to-top {
+    padding: 10px 20px;
+    background-color: #64b5f6; /* Light blue button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+.resume-button:hover,
+.contact-button:hover,
+.back-to-top:hover {
+    background-color: #1e88e5; /* Darker blue on hover */
+}
+
+.dark-mode-toggle {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #555;
+}
+
+/* Main Section Styles */
+main h2 {
+    font-size: 2em;
+    color: #1976d2; /* Dark blue h2 */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1976d2;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #1976d2; /* Dark blue h3 */
+    margin-bottom: 10px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer (Contact Me Section) Styles */
+footer {
+    background-color: #1976d2; /* Dark blue footer */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    border-top: 4px solid #64b5f6; /* Light blue border on footer */
+}
+
+footer h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #bbdefb; /* Lighter blue on hover */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #000; /* Black background */
+    color: #f1f1f1;
+}
+
+body.dark-mode header {
+    background-color: #0d47a1; /* Dark blue header */
+}
+
+body.dark-mode main h2 {
+    color: #42a5f5; /* Light blue h2 in dark mode */
+    border-bottom-color: #42a5f5;
+}
+
+body.dark-mode h3 {
+    color: #42a5f5; /* Light blue h3 in dark mode */
+}
+
+body.dark-mode .card, 
+body.dark-mode .grid-item {
+    background: #1a1a1a; /* Dark grey cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .resume-button,
+body.dark-mode .contact-button,
+body.dark-mode .back-to-top {
+    background-color: #42a5f5; /* Light blue buttons */
+}
+
+body.dark-mode .resume-button:hover,
+body.dark-mode .contact-button:hover,
+body.dark-mode .back-to-top:hover {
+    background-color: #90caf9; /* Lighter blue on hover */
+}
+
+body.dark-mode footer {
+    background-color: #0d47a1; /* Dark blue footer */
+    border-top-color: #42a5f5;
+}
+
+body.dark-mode footer a {
+    color: #42a5f5; /* Light blue links */
+}
+
+body.dark-mode footer a:hover {
+    color: #bbdefb; /* Even lighter blue on hover */
+}
